@@ -3,3 +3,22 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+h1.errorMessage{
+  left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    font-family: 'Bungee', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+img.logo-picture{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

@@ -2,6 +2,7 @@
   text-align: center;
   background-color: rgb(74, 71, 71);
   height: 100%;
+  margin: 0;
 }
 
 .App-logo {
@@ -41,5 +42,20 @@
 
 .input-group {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  margin: 25px 0;
+  right: 25px;
+  
+}
+
+.navbar-container {
+  display: flex;
+  background-color: #009ae5;
+  /* position: fixed; */
+  /* justify-content: space-between; */
+
+}
+
+img.Navbar-pic {
+  width: 200px;
 }

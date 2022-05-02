@@ -32,7 +32,7 @@ export default function Movies({listOfMovies, onClick, allMovies}) {
         image2 = {movie.movie_banner}
         index={index} />
       })}
-      {listOfMovies.length === 0 && <NoMovies />}
+      {listOfMovies.length === 0 && <NoMovies  allMovies = {allMovies}/>}
     </div>
   )
 }

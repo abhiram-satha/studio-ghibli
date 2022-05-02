@@ -24,6 +24,7 @@ useEffect(()=> {
   }
 
   function allMovies() {
+    
     axios.get('https://ghibliapi.herokuapp.com/films/')
     .then(response => {
       return response.data

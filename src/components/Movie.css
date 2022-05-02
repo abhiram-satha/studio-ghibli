@@ -5,7 +5,7 @@
   border-radius: 10px;
 }
 
-img {
+img.movie-pic {
   width: 25em;
   border-radius: 10px 10px 0 0 ;
 }

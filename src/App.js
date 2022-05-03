@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import SearchForm from './components/SearchForm';
 import Movies from "./components/Movies";
-import { type } from '@testing-library/user-event/dist/type';
 const axios = require("axios");
 
 
@@ -40,6 +39,7 @@ useEffect(()=> {
     if (!lookup) {
       allMovies()
     } else {
+      
       let searchArray = movies.filter(movie => {
         return movie.title.toLowerCase().includes(lookup.toLowerCase()) 
       })

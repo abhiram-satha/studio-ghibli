@@ -1,11 +1,11 @@
 .movieCard {
   border: 1px black solid;
-  margin: 3px 10px;
+  margin: 10px 0;
   background-color: rgba(166, 158, 158, 0.339);
   border-radius: 10px;
 }
 
 img.movie-pic {
-  width: 25em;
+  width: 24em;
   border-radius: 10px 10px 0 0 ;
 }

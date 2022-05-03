@@ -7,12 +7,21 @@ const axios = require("axios");
 
 function App() {
 
+  let watchedMovie = []
   const [movies, setMovies] = useState([]);
 
 useEffect(()=> {
   axios.get('https://ghibliapi.herokuapp.com/films/')
   .then(response => {
-    setMovies(response.data)
+    let movieWatchedObjected = response.data.map(id => {
+      return {...id, 'userInput': {watched:false,
+        rating: null
+  } }
+    })
+    return movieWatchedObjected
+  }).then(responseObject => {
+
+    setMovies(responseObject)
   })
 }, [])
 
@@ -21,7 +30,6 @@ useEffect(()=> {
     // console.log(newMovie)
     setMovies([movies[id]])
   }
-
   function allMovies() {
     
     axios.get('https://ghibliapi.herokuapp.com/films/')
